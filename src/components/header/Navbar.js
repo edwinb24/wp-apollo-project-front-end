@@ -14,6 +14,9 @@ function Navbar() {
         <NavLink to="/contact">Contact</NavLink>
       </li>
       <li>
+        <NavLink to="/latest">Latest</NavLink>
+      </li>
+      <li>
         <NavLink to="/user/1">User</NavLink>
       </li>
     </ul>

@@ -1,15 +1,18 @@
 import React, {Component}  from "react"
 
-import Navbar from "./components/Navbar"
+import Router from "./Router"
+
+import Header from "./components/header/Header"
+import Footer from "./components/Footer"
 import AllPosts from "./components/AllPosts"
 
 class App extends Component {
   render() {
     return( 
         <div>
-          <h1>HelloWorld</h1>
-          <Navbar />
-          <AllPosts />
+          <Header />
+          <Router />
+          <Footer />
         </div>
     )
   }
