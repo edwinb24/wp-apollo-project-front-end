@@ -5,7 +5,7 @@ import AllPosts from "./components/AllPosts"
 
 class App extends Component {
   render() {
-    return(
+    return( 
         <div>
           <h1>HelloWorld</h1>
           <Navbar />
