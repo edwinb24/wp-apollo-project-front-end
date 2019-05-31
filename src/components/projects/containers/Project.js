@@ -1,10 +1,10 @@
 import React from "react"
 
-function Post(props){
+function Project(props){
     return (
         <div className="project-element">
-            <h1>{props.post.title}</h1>
+            <h1>{props.project.title}</h1>
         </div>
     )
 }
-export default Post
+export default Project

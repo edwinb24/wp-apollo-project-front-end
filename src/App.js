@@ -3,8 +3,8 @@ import React, {Component}  from "react"
 import Router from "./Router"
 
 import Header from "./components/header/Header"
-import Footer from "./components/Footer"
-import AllPosts from "./components/AllPosts"
+import Footer from "./components/footer/Footer"
+import AllProjects from "./components/projects/AllProjects"
 
 class App extends Component {
   render() {

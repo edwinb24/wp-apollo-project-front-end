@@ -16,7 +16,7 @@ const client = new ApolloClient({
    .query({
      query: gql`
        query {
-         posts {
+         projects {
            nodes {
              title
          }

@@ -3,13 +3,13 @@ import React from "react"
 import { Query } from "react-apollo";
 import { gql } from "apollo-boost";
 
-import Post from "./containers/Post"
+import Project from "./containers/Project"
 
-const AllPosts = () => (
+const AllProjects = () => (
     <Query
       query={gql`
         {
-            posts {
+            projects {
                 nodes {
                     title
                     id
@@ -21,14 +21,14 @@ const AllPosts = () => (
       {({ loading, error, data }) => {
         if (loading) return <p>Loading...</p>
         if (error) return <p>Error :(</p>
-            let allPostsData = data.posts.nodes.map(post => <Post key={post.id} post={post}/>)
+            let allProjectsData = data.projects.nodes.map(project => <Project key={project.id} project={project}/>)
         return (
-            <div className="post-list">
-                {allPostsData}
+            <div className="project-list">
+                {allProjectsData}
             </div>
         )
       }}
     </Query>
   );
 
-export default AllPosts
+export default AllProjects
