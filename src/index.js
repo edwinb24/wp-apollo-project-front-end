@@ -12,20 +12,6 @@ const client = new ApolloClient({
   uri: "http://local.broceedwin-server.com/graphql?"
 });
 
- client
-   .query({
-     query: gql`
-       query {
-         projects {
-           nodes {
-             title
-         }
-        }
-      }
-   `
-  })
-  .then(result => console.log(result));
-
 const routered = (
                                   <div>
                                   <ApolloProvider client={client}>

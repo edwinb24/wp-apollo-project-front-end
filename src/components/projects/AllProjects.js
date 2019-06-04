@@ -1,22 +1,13 @@
 import React from "react"
 
 import { Query } from "react-apollo";
-import { gql } from "apollo-boost";
 
 import Project from "./containers/Project"
+import {ALL_PROJECTS}  from "../../AllQueries"
 
 const AllProjects = () => (
     <Query
-      query={gql`
-        {
-            projects {
-                nodes {
-                    title
-                    id
-                }
-            }
-        }
-      `}
+      query={ALL_PROJECTS}
     >
       {({ loading, error, data }) => {
         if (loading) return <p>Loading...</p>
