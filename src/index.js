@@ -5,8 +5,8 @@ import * as serviceWorker from './serviceWorker'
 import {BrowserRouter} from "react-router-dom"
 import App from "./App"
 
-import ApolloClient, {gql} from "apollo-boost"
-import { ApolloProvider} from "react-apollo";
+import ApolloClient from "apollo-boost"
+import { ApolloProvider }  from "react-apollo";
 
 const client = new ApolloClient({
   uri: "http://local.broceedwin-server.com/graphql?"
